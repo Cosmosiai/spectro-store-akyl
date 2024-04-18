@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spectro  # Replace 'mydatabase' with your actual database name
+    username: root  # Replace 'your_username' with your PostgreSQL username
+    password: spectro2305  # Replace 'your_password' with your PostgreSQL password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
